@@ -1,7 +1,6 @@
 import re
 import shutil
 from pathlib import Path
-from typing import Optional
 
 from git import Repo, GitCommandError
 from github import Github, GithubException

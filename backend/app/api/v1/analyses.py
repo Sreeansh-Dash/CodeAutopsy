@@ -118,13 +118,14 @@ async def delete_analysis(
 
 
 STATUS_MESSAGES = {
-    "queued":    "Waiting to start...",
-    "cloning":   "Cloning repository...",
-    "parsing":   "Parsing source files...",
+    "queued": "Waiting to start...",
+    "cloning": "Cloning repository...",
+    "parsing": "Parsing source files...",
     "analyzing": "Running analysis pipeline...",
-    "complete":  "Analysis complete",
-    "failed":    "Analysis failed",
+    "complete": "Analysis complete",
+    "failed": "Analysis failed",
 }
+
 
 @router.get("/{analysis_id}/status")
 async def stream_status(

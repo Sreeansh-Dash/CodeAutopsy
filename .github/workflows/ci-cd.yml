@@ -50,7 +50,7 @@ jobs:
         run: pip install -r backend/requirements.txt -r backend/requirements-dev.txt
 
       - name: Lint — flake8
-        run: cd backend && flake8 app/ --max-line-length=120 --ignore=E501,W503,E241,E302,E303,F401,W391,F541
+        run: cd backend && flake8 app/ --max-line-length=120 --ignore=E501,W503
 
       - name: Run migrations
         run: cd backend && alembic upgrade head

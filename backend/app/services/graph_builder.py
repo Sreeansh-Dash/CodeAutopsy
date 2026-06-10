@@ -77,4 +77,3 @@ def build_dependency_edges(parsed_files: list[ParsedFile]) -> list[DependencyEdg
                     ))
 
     return edges
-

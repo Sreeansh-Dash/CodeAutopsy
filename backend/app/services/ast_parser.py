@@ -81,7 +81,6 @@ def extract_python_imports(content: str) -> list[str]:
     return imports
 
 
-
 def extract_js_imports(content: str) -> list[str]:
     imports = []
     for line in content.splitlines():

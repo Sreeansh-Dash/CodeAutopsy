@@ -29,4 +29,3 @@ app.include_router(results.router, prefix="/api/v1")
 async def health_check():
     """Used by Render health checks and UptimeRobot keep-alive pings."""
     return {"status": "ok"}
-

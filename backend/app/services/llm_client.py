@@ -58,7 +58,7 @@ class LLMClient:
 
     def generate(self, prompt: str, max_tokens: int = 600) -> str:
         if self.provider == "mock":
-            return f"[Mock insight — configure LLM_PROVIDER in .env to enable AI]"
+            return "[Mock insight — configure LLM_PROVIDER in .env to enable AI]"
 
         if self.provider == "groq":
             try:
