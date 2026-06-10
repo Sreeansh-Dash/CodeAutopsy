@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens ─────────────────────────────────────────────── */
+:root {
+  /* Dark theme — these values power every bg-*, text-*, border-* class */
+  --background:          240 12%  6%;    /* #0c0c10  near-black canvas      */
+  --foreground:          220 15% 90%;    /* #e1e3ea  near-white text         */
+
+  --card:                240 10%  9%;    /* #131318  slightly lifted surface */
+  --card-foreground:     220 15% 90%;
+
+  --popover:             240 10% 10%;
+  --popover-foreground:  220 15% 90%;
+
+  --primary:             258 80% 66%;    /* #7c4dff  vivid purple            */
+  --primary-foreground:    0  0% 100%;
+
+  --secondary:           240  8% 14%;    /* #1c1c24  button / input bg       */
+  --secondary-foreground:220 12% 70%;
+
+  --muted:               240  8% 14%;
+  --muted-foreground:    220  8% 50%;    /* #747482  subdued labels          */
+
+  --accent:              258 40% 22%;    /* #2d1f5c  hover highlight         */
+  --accent-foreground:   220 15% 90%;
+
+  --destructive:           0 62% 50%;
+  --destructive-foreground:0  0% 100%;
+
+  --border:              240  8% 18%;    /* #242432  subtle dividers         */
+  --input:               240  8% 14%;
+  --ring:                258 80% 66%;
+
+  --radius:              0.5rem;
+}
+
+/* ── Base resets ───────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default link decoration inside components */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Thin, themed scrollbar */
+::-webkit-scrollbar        { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: hsl(var(--border)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }

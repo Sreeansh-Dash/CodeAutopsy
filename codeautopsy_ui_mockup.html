@@ -1,0 +1,167 @@
+
+<style>
+.ca{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden}
+.ca-hdr{display:flex;align-items:center;gap:10px;padding:0 16px;height:44px;border-bottom:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.ca-logo{font-size:15px;font-weight:500;color:var(--color-text-primary);display:flex;align-items:center;gap:7px}
+.ca-repo{font-size:11px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:4px;padding:2px 8px;color:var(--color-text-tertiary)}
+.ca-ok{display:inline-block;font-size:10px;padding:2px 9px;border-radius:20px;background:#EAF3DE;color:#3B6D11;font-weight:500;margin-left:auto}
+.ca-body{display:flex;height:356px}
+.ca-tree{width:148px;border-right:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary);overflow:hidden;padding:8px 0}
+.fi{display:flex;align-items:center;gap:5px;padding:3px 8px;font-size:11px;color:var(--color-text-secondary);white-space:nowrap}
+.fi:hover{background:var(--color-background-secondary);color:var(--color-text-primary);cursor:pointer}
+.fi.sel{background:#EEEDFE;color:#534AB7}
+.i1{padding-left:14px}.i2{padding-left:22px}
+.ca-mid{flex:1;background:var(--color-background-secondary);position:relative;overflow:hidden}
+.g-hd{position:absolute;top:9px;left:12px;font-size:11px;color:var(--color-text-tertiary);display:flex;align-items:center;gap:5px}
+.leg{position:absolute;bottom:9px;left:12px;display:flex;gap:10px}
+.li{font-size:11px;color:var(--color-text-tertiary);display:flex;align-items:center;gap:4px}
+.ld{width:7px;height:7px;border-radius:50%}
+.ca-right{width:186px;border-left:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary);overflow:hidden;display:flex;flex-direction:column}
+.tabs{display:flex;border-bottom:0.5px solid var(--color-border-tertiary);flex-shrink:0}
+.tab{flex:1;text-align:center;padding:9px 4px;font-size:11px;cursor:pointer;color:var(--color-text-tertiary);border-bottom:2px solid transparent}
+.tab.on{color:#534AB7;border-bottom-color:#534AB7}
+.sec{padding:10px 12px}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--color-text-tertiary);font-weight:500;margin-bottom:5px}
+.txt{font-size:11px;color:var(--color-text-secondary);line-height:1.6}
+.div{border-top:0.5px solid var(--color-border-tertiary)}
+.iss{font-size:11px;padding:6px 8px;border-radius:6px;background:var(--color-background-secondary);margin-bottom:4px;border-left:2px solid #EF9F27}
+.iss-t{color:var(--color-text-primary);font-weight:500;margin-bottom:2px}
+.iss-s{color:var(--color-text-tertiary);font-size:11px}
+.pat{font-size:11px;padding:3px 0;color:var(--color-text-secondary);display:flex;align-items:center;gap:5px}
+.pb{font-size:10px;padding:1px 5px;border-radius:3px;margin-left:auto}
+.ca-foot{display:flex;align-items:center;gap:14px;padding:0 16px;height:46px;border-top:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary);flex-shrink:0}
+.cm{font-size:11px;color:var(--color-text-secondary);display:flex;align-items:center;gap:5px}
+.cmv{font-weight:500;color:var(--color-text-primary)}
+.qt{width:56px;height:4px;background:var(--color-border-tertiary);border-radius:2px;overflow:hidden}
+.qtf{height:4px;width:74%;background:#639922;border-radius:2px}
+.gl{font-family:var(--font-sans);font-size:11px;fill:var(--color-text-tertiary)}
+.gls{font-family:var(--font-sans);font-size:11px;fill:#534AB7;font-weight:500}
+.tt-bg{fill:var(--color-background-primary)}
+.tt-t{font-family:var(--font-sans);font-size:11px;fill:var(--color-text-primary)}
+.tt-s{font-family:var(--font-sans);font-size:11px;fill:var(--color-text-tertiary)}
+</style>
+
+<div class="ca">
+  <div class="ca-hdr">
+    <div class="ca-logo">
+      <i class="ti ti-heartbeat" style="font-size:18px;color:#534AB7" aria-hidden="true"></i>
+      CodeAutopsy
+    </div>
+    <span class="ca-repo">pallets / flask</span>
+    <span style="font-size:11px;color:var(--color-text-tertiary)">analyzed 2m ago</span>
+    <span class="ca-ok">✓ Complete</span>
+  </div>
+
+  <div class="ca-body">
+    <div class="ca-tree">
+      <div class="fi"><i class="ti ti-chevron-down" style="font-size:11px" aria-hidden="true"></i><i class="ti ti-folder" style="font-size:12px;color:#EF9F27" aria-hidden="true"></i>src</div>
+      <div class="fi i1"><i class="ti ti-chevron-down" style="font-size:10px" aria-hidden="true"></i><i class="ti ti-folder" style="font-size:11px;color:#EF9F27" aria-hidden="true"></i>api</div>
+      <div class="fi i2"><i class="ti ti-file-code" style="font-size:11px;color:#AFA9EC" aria-hidden="true"></i>analyses.py</div>
+      <div class="fi i2"><i class="ti ti-file-code" style="font-size:11px;color:#AFA9EC" aria-hidden="true"></i>auth.py</div>
+      <div class="fi i1"><i class="ti ti-chevron-down" style="font-size:10px" aria-hidden="true"></i><i class="ti ti-folder" style="font-size:11px;color:#EF9F27" aria-hidden="true"></i>models</div>
+      <div class="fi i2 sel"><i class="ti ti-file-code" style="font-size:11px" aria-hidden="true"></i>analysis.py</div>
+      <div class="fi i2"><i class="ti ti-file-code" style="font-size:11px" aria-hidden="true"></i>user.py</div>
+      <div class="fi i1"><i class="ti ti-chevron-right" style="font-size:10px" aria-hidden="true"></i><i class="ti ti-folder" style="font-size:11px;color:#EF9F27" aria-hidden="true"></i>services</div>
+      <div class="fi i1"><i class="ti ti-chevron-right" style="font-size:10px" aria-hidden="true"></i><i class="ti ti-folder" style="font-size:11px;color:#EF9F27" aria-hidden="true"></i>workers</div>
+      <div class="fi i2"><i class="ti ti-file-code" style="font-size:11px;color:#F0997B" aria-hidden="true"></i>tasks.py</div>
+      <div class="fi i1"><i class="ti ti-file-code" style="font-size:11px;color:#5DCAA5" aria-hidden="true"></i>main.py</div>
+      <div style="margin:6px 8px;border-top:0.5px solid var(--color-border-tertiary)"></div>
+      <div class="fi"><i class="ti ti-chevron-right" style="font-size:11px" aria-hidden="true"></i><i class="ti ti-folder" style="font-size:12px;color:#EF9F27" aria-hidden="true"></i>tests</div>
+    </div>
+
+    <div class="ca-mid">
+      <div class="g-hd"><i class="ti ti-share-2" style="font-size:12px" aria-hidden="true"></i>Dependency graph · 24 nodes · 38 edges</div>
+      <svg width="100%" height="100%" viewBox="0 0 310 300" style="display:block">
+        <defs>
+          <marker id="ge" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#B4B2A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+          <marker id="gew" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#EF9F27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+        </defs>
+        <!-- Edges -->
+        <line x1="152" y1="122" x2="84" y2="82" stroke="#B4B2A9" stroke-width="0.8" opacity="0.5" marker-end="url(#ge)"/>
+        <line x1="158" y1="122" x2="236" y2="78" stroke="#B4B2A9" stroke-width="0.8" opacity="0.5" marker-end="url(#ge)"/>
+        <line x1="76" y1="84" x2="50" y2="180" stroke="#B4B2A9" stroke-width="0.8" opacity="0.45" marker-end="url(#ge)"/>
+        <path d="M76,88 C10,130 180,72 220,155" fill="none" stroke="#B4B2A9" stroke-width="0.8" opacity="0.45" marker-end="url(#ge)"/>
+        <line x1="240" y1="74" x2="96" y2="228" stroke="#B4B2A9" stroke-width="0.8" opacity="0.35" marker-end="url(#ge)"/>
+        <line x1="230" y1="160" x2="270" y2="182" stroke="#EF9F27" stroke-width="1" opacity="0.7" marker-end="url(#gew)"/>
+        <line x1="218" y1="162" x2="56" y2="184" stroke="#B4B2A9" stroke-width="0.8" opacity="0.45" marker-end="url(#ge)"/>
+        <line x1="80" y1="90" x2="196" y2="228" stroke="#534AB7" stroke-width="1" opacity="0.4" marker-end="url(#ge)"/>
+        <!-- Nodes -->
+        <circle cx="155" cy="132" r="21" fill="#D3D1C7" stroke="#888780" stroke-width="0.8"/>
+        <text class="gl" x="155" y="160" text-anchor="middle" style="fill:#444441;font-weight:500">main.py</text>
+        <circle cx="78" cy="70" r="15" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.8"/>
+        <text class="gl" x="78" y="97" text-anchor="middle">analyses.py</text>
+        <circle cx="240" cy="66" r="12" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.8"/>
+        <text class="gl" x="240" y="91" text-anchor="middle">auth.py</text>
+        <circle cx="46" cy="188" r="12" fill="#5DCAA5" stroke="#0F6E56" stroke-width="0.8"/>
+        <text class="gl" x="46" y="213" text-anchor="middle">github.py</text>
+        <circle cx="276" cy="190" r="13" fill="#5DCAA5" stroke="#0F6E56" stroke-width="0.8"/>
+        <text class="gl" x="276" y="216" text-anchor="middle">ai.py</text>
+        <circle cx="226" cy="150" r="16" fill="#F5C4B3" stroke="#D85A30" stroke-width="1.5"/>
+        <text class="gl" x="226" y="179" text-anchor="middle" style="fill:#712B13;font-weight:500">tasks.py</text>
+        <circle cx="94" cy="238" r="11" fill="#85B7EB" stroke="#185FA5" stroke-width="0.8"/>
+        <text class="gl" x="94" y="261" text-anchor="middle">user.py</text>
+        <circle cx="202" cy="240" r="12" fill="#378ADD" stroke="#0C447C" stroke-width="2.5"/>
+        <text class="gls" x="202" y="265" text-anchor="middle">analysis.py</text>
+        <!-- Tooltip on tasks.py -->
+        <rect class="tt-bg" x="246" y="120" width="60" height="30" rx="4" stroke="#D85A30" stroke-width="0.5"/>
+        <line x1="246" y1="135" x2="242" y2="148" stroke="#D85A30" stroke-width="0.5"/>
+        <text class="tt-t" x="251" y="133">tasks.py</text>
+        <text class="tt-s" x="251" y="145">CC score: 21</text>
+      </svg>
+      <div class="leg">
+        <div class="li"><div class="ld" style="background:#AFA9EC"></div>Routes</div>
+        <div class="li"><div class="ld" style="background:#5DCAA5"></div>Services</div>
+        <div class="li"><div class="ld" style="background:#F0997B"></div>Workers</div>
+        <div class="li"><div class="ld" style="background:#85B7EB"></div>Models</div>
+      </div>
+    </div>
+
+    <div class="ca-right">
+      <div class="tabs">
+        <div class="tab on">Insights</div>
+        <div class="tab">Patterns</div>
+        <div class="tab">Metrics</div>
+      </div>
+      <div style="overflow:hidden;flex:1">
+        <div class="sec">
+          <p class="lbl">Summary</p>
+          <p class="txt">Clean layered architecture. 3 circular dependency risks detected in the worker layer.</p>
+        </div>
+        <div class="div"></div>
+        <div class="sec">
+          <p class="lbl">Issues (2)</p>
+          <div class="iss">
+            <div class="iss-t">⚠ Circular dep</div>
+            <div class="iss-s">tasks.py ↔ ai.py</div>
+          </div>
+          <div class="iss">
+            <div class="iss-t">⚠ High complexity</div>
+            <div class="iss-s">analyzer.py (CC: 21)</div>
+          </div>
+        </div>
+        <div class="div"></div>
+        <div class="sec">
+          <p class="lbl">Patterns (4)</p>
+          <div class="pat"><span style="color:#3B6D11">✓</span><span>Repository</span><span class="pb" style="background:#EAF3DE;color:#3B6D11">strong</span></div>
+          <div class="pat"><span style="color:#3B6D11">✓</span><span>Service Layer</span><span class="pb" style="background:#EAF3DE;color:#3B6D11">strong</span></div>
+          <div class="pat"><span style="color:#0F6E56">✓</span><span>Factory</span><span class="pb" style="background:#E1F5EE;color:#0F6E56">medium</span></div>
+          <div class="pat"><span style="color:#BA7517">~</span><span>Singleton</span><span class="pb" style="background:#FAEEDA;color:#BA7517">weak</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ca-foot">
+    <div class="cm">Quality<div class="qt"><div class="qtf"></div></div><span class="cmv">74/100</span></div>
+    <div class="cm">Files <span class="cmv">142</span></div>
+    <div class="cm">LoC <span class="cmv">8,420</span></div>
+    <div class="cm" style="margin-left:auto">
+      <span style="font-size:11px;padding:2px 7px;border-radius:3px;background:#EEEDFE;color:#534AB7">Python 68%</span>
+      <span style="font-size:11px;padding:2px 7px;border-radius:3px;background:#E1F5EE;color:#0F6E56">JS 32%</span>
+    </div>
+  </div>
+</div>
